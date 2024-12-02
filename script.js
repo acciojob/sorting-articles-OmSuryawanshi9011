@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
       'The Plot in You',
       'The Devil Wears Prada',
@@ -15,7 +14,7 @@ const bands = [
       'An Old Dog'
     ];
 
- // Function to strip "a", "an", and "the" from the beginning of a string
+    // Function to strip "a", "an", and "the" from the beginning of a string
     function stripArticle(str) {
       return str.replace(/^(a |an |the )/i, '').trim();
     }
@@ -27,8 +26,8 @@ const bands = [
       return bandA.localeCompare(bandB);
     });
 
-    // Select the unordered list and populate it with sorted bands
-    const ul = document.getElementById('band');
+    // Populate the list with sorted bands
+    const ul = document.getElementById('bands'); // Matches updated id
     sortedBands.forEach(band => {
       const li = document.createElement('li');
       li.textContent = band;
